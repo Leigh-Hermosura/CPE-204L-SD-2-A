@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #00A651;
+    --light-color: #ffffff;
+    --dim-color: #80D2A8;
+    --twoDim-color: #F2F9F5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+a {
+    color: var(--dim-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--light-color);
+    padding: 10px;
+}
+
+.navbar2 {
+    background-color: var(--twoDim-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar2 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo ul {
+    display: flex;
+}
+
+.navbar .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo .logo-text {
+    color: #1B5E20;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+
+.navbar .right-side ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s
+}
+
+/* .navbar ul li a:hover {
+    color: var(--light-color);
+} */
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+/* UTILITY CLASSES */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    padding: 0 15px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: var(--twoDim-color);
+    color: var(--primary-color);
+}
+
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* TEXT CLASSES */
+.wooders .container-sm {
+    text-align: center;
+    padding: 50px 0 40px;
+}
+
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 10px 0 10px;
+    text-align: center;
+    color: #1B5E20;
+}
+
+.text-smol {
+    color: #4A5568;
+    font-weight: 450;
+    font-size: 1.1rem;
+    margin: 0 0 0;
+}
+
+.text-l  {
+    color: #1B5E20;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.text-xl {
+    color: #1B5E20;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+/* IMAGE CLASSES */
+.AWIC-logo {
+    height: 36px;
+}
+
+/* CARDS */
+.theCards-heading {
+    margin: 60px 0 20px;
+    text-align: center;
+}
+
+.theCards .card img {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.theCards .card p {
+    padding: 0 25px 0;
+}
+
+.theCards .card p:nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #1B5E20;
+    padding-top: 25px;
+}
+
+.theCards .card p:nth-child(2) {
+    font-weight: 750;
+    font-size: 1.4rem;
+    padding: 15px 25px 15px;
+    color: #1B5E20;
+}
+
+.theCards .card p:nth-child(3) {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6B7280;
+    padding-bottom: 25px;
+}
+
+.wooders {
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    color: #000;
+    border-radius: 0 0 10px 10px;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.greenCard {
+    background: #064F24;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    align-items: center;
+}
+
+.theCards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 100px;
+    padding-bottom: 70px;
+}
+
+.green-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 100px;
+}
+
+/* BACKGROUND */
+.bg-twoDim {
+    background-color: var(--twoDim-color);
+}
